@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://slides.rmcreative.ru/2013/php-frameworks-yii2/#/28 -->
+<html lang="en"><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>PHP, фреймворки, Yii2</title>
+<meta name="description" content="Что происходит в мире PHP, фреймворков и как продвигается Yii2">
+<meta name="author" content="Александр Макаров">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="./PHP, фреймворки, Yii2_files/reveal.css">
+<link rel="stylesheet" href="./PHP, фреймворки, Yii2_files/samdark.css" id="theme">
+<link rel="stylesheet" href="./PHP, фреймворки, Yii2_files/style.css">
+
+<script>
+			document.write( '<link rel="stylesheet" href="../../bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script><link rel="stylesheet" href="./PHP, фреймворки, Yii2_files/paper.css" type="text/css" media="print">
+<!--[if lt IE 9]>
+        <script src="../../bower_components/reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+<body style="transition: -webkit-transform 0.8s ease 0s;">
+
+<div class="reveal default center" role="application" data-transition-speed="default" data-background-transition="fade">
+
+<div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(0.775286);">
+<section style="top: 0px; display: none;" class="past" hidden="" aria-hidden="true">
+<h1>PHP, фреймворки</h1>
+</p>
+</section>
+<section style="top: 184px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>PHP замечателен!</h2>
+<ul>
+<li>Отличный выбор для веб разработки.</li>
+<li><a href="http://w3techs.com/technologies/overview/programming_language/all">Намного живее остальных</a> (81%!).</li>
+<li>С хорошим фреймворком приятен.</li>
+</ul>
+</section>
+<section style="top: 68.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>PHP стремится к <strong>простоте</strong> и улучшается</h2>
+<ul>
+<li>Производительность.</li>
+<li>Синтаксис.</li>
+<li>API хеширования паролей.</li>
+<li>Генераторы.</li>
+<li>И многое другое...</li>
+</ul>
+</section>
+<section style="top: 254.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>И <strong>это прекрасно</strong>!</h2>
+</section>
+<section style="top: 138.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Хотя есть и «нехорошести»</h2>
+<ul>
+<li>Скандалы, интриги, расследования</li>
+<li>Не такая большая команда, как кажется.</li>
+</ul>
+</section>
+<section style="top: 162px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Помогайте PHP стать лучше</h2>
+<ul>
+<li><a href="http://www.php.net/get-involved.php">http://www.php.net/get-involved.php</a></li>
+</ul>
+</section>
+<section style="top: 254.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>А что <strong>по фреймворкам</strong>?</h2>
+</section>
+<section style="top: 71.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Сначала о хорошем</h2>
+<ul>
+<li>Есть несколько <strong>стабильных, поддерживаемых и обратно совместимых</strong>
+фреймворков.</li>
+</ul>
+<img src="https://miro.medium.com/v2/resize:fit:1200/0*u4n4WRkR-IckVFKU.jpg">
+</section>
+<section style="top: 209px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>А теперь <strong>о не очень хорошем…</strong></h2>
+</section>
+<section style="top: 161px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Переусложнение</h2>
+<ul>
+<li>Фреймворки могут быть черезчур гибкие и сложные.</li>
+<li>Ещё более наворочены, чем их новые версии.</li>
+<li>Многие считают, что это единственный правильный путь.</li>
+</ul>
+</section>
+<section style="top: 153px; display: none;" class="past" hidden="" aria-hidden="true">
+<p>Все проблемы программирования можно решить дополнительным слоем абстракции… кроме проблемы избыточной абстракции</p>
+<br>
+<p style="text-align: right; margin-right: 20px; font-style: italic">David Wheeler</p>
+</section>
+<section style="top: 163.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2><strong>Зачем</strong> делать <strong>сложно</strong>,
+если можно делать просто?</h2>
+</section>
+<section style="top: 209px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Сделать <strong>просто сложнее</strong>, чем сделать
+<strong>сложно</strong></h2>
+</section>
+<section style="top: 68.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Чем оправдывается сложность?</h2>
+<ul>
+<li><strong>Паттерны знают все</strong>. Когда их видно
+в интерфейсе, всем всё понятно.</li>
+<li><strong>Легче тестировать</strong>.</li>
+<li><strong>А вдруг</strong> кто-то придумает поменять одну БД на другую, а вдруг надо поменять один основной
+компонент на другой? А вдруг что-то пойдёт не так...</li>
+</ul>
+</section>
+<section style="top: 20.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Чем это оборачивается</h2>
+<ul>
+<li><strong>Непонимание, паттернизм</strong>. Говорят как реализовано, но не для чего.</li>
+<li>Иногда легче тестировать, но <strong>заметно сложнее писать код,
+отлаживать и изучать</strong>.</li>
+<li>Куча слоёв. В тестах можно извернуться раз, а с API работать постоянно.</li>
+<li><strong>Плата за гибкость — сложность</strong>. Сверхгибкость не нужна.</li>
+<li><strong>Невозможно отдать рутину</strong> менее
+опытным разработчикам не потратив
+<strong>много времени на обучение</strong>.</li>
+</ul>
+</section>
+<section style="top: 254.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>А ещё?</h2>
+</section>
+<section style="top: 209px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Зависимости</h2>
+<h3>Много зависимостей</h3>
+<img src="https://www.meme-arsenal.com/memes/9610dfcb3ba45b705f68f05631e82928.jpg">
+</section>
+<section style="top: 21.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Composer</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-composer-transparent.png">
+</section>
+<section style="top: 254.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Laravel</h2>
+<img src="https://media.licdn.com/dms/image/D5612AQGrUk-Euq6J_w/article-cover_image-shrink_600_2000/0/1677780279349?e=2147483647&v=beta&t=OJ7_EgucF9GJPnzVn23mbaXtKdrf-kvDffVHGC-h38w">
+</section>
+<section style="top: 68.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Zend</h2>
+<img src="https://raw.githubusercontent.com/zendframework/zf2/234b554f2ca202095aea32e4fa557553f8849664/resources/ZendFramework-logo.png">
+</section>
+<section style="top: 68.5px; display: none;" class="past" hidden="" aria-hidden="true">
+  <h2>CakePHP</h2>
+  <img src="data:image/png;base64,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">
+  </section>
+<section style="top: 68.5px; display: none;" class="past" hidden="" aria-hidden="true">
+   <h2>Symfony</h2>
+   <img src="https://symfony.com/images/opengraph/symfony.png">
+</section>
+<section style="top: 68.5px; display: none;" class="past" hidden="" aria-hidden="true">
+  <h2>CodeIgniter</h2>
+  <img src="https://fsh.org.in/file_uploads/images/codeigniter-logo.png">
+</section>
+<section style="top: 137.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Мифы о фреймворках</h2>
+<ul>
+<li><strong>Переизобрёл колесо</strong> = плохой.</li>
+<li><strong>Контейнер DI и клёвые паттерны</strong> = хороший.</li>
+<li><strong>Сделали фичу первыми</strong> = лучше остальных.</li>
+<li><strong>Слабо связанный</strong> = всегда лучше.</li>
+<li><strong>Нет фичи X</strong> = плохой.</li>
+</ul>
+</section>
+<section style="top: 90.5px; display: none;" class="past" hidden="" aria-hidden="true">
+<h2>Действительно важно</h2>
+<ul>
+<li>Легко <strong>изучать</strong>.</li>
+<li>Легко <strong>отлаживать</strong> и
+<strong>исправлять ошибки</strong>.</li>
+<li><strong>Не мешает</strong> работать и использовать
+сторонний код.</li>
+<li>Дружелюбное активное <strong>сообщество</strong>.</li>
+<li><strong>Обратно совместим</strong> и
+<strong>стабилен</strong>.</li>
+<li>Нет сложностей при попытках <strong>настроить</strong> и
+<strong>расширить</strong>.</li>
+<li>Фреймворк <strong>должен нравиться</strong> ;)</li>
+</ul>
+</section>
+<section style="top: 112px; display: none;" class="past" hidden="" aria-hidden="true">
+<img src="./PHP, фреймворки, Yii2_files/history.png" alt="История Yii">
+Что нас ждёт дальше?
+</section>
+<section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="future">
+<h2>Попробовать 100% стоит</h2>
+</section>
+<section style="top: 330px; display: none;" hidden="" aria-hidden="true" class="future">
+<h2>Вопросы?</h2>
+<img src="./PHP, фреймворки, Yii2_files/elephant.png">
+</section>
+</div>
+<div class="backgrounds"><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: block;" data-loaded="true"></div><div class="slide-background past" style="display: block;" data-loaded="true"></div><div class="slide-background present" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 504.789px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide"></button><button class="navigate-down" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+Становится ещё быстрее и требует меньше памяти благодаря сообществу
+</div></div>
+<script src="./PHP, фреймворки, Yii2_files/head.min.js.Без названия"></script>
+<script src="./PHP, фреймворки, Yii2_files/reveal.js.Без названия"></script>
+<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../bower_components/reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script><script type="text/javascript" src="./PHP, фреймворки, Yii2_files/highlight.js.Без названия"></script><script type="text/javascript" src="./PHP, фреймворки, Yii2_files/zoom.js.Без названия"></script><script type="text/javascript" src="./PHP, фреймворки, Yii2_files/notes.js.Без названия"></script>
+
+
+</body></html>
